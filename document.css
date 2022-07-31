@@ -14,6 +14,9 @@ h2c, h3c, h4c, h5c, h6c {
   margin-left: 0;
   margin-right: 0;
   font-weight: bold;
+  }
+h2, h3, h4, h5, h6,
+h2i, h3i, h4i, h5i, h6i {
   text-align: left;
   }
 h1, h1i {
@@ -125,6 +128,10 @@ th {
 td {
   border: black solid 0.1em;
   background: rgb(95%, 95%, 95%);
+  }
+td.none {
+  border: none;
+  background: rgba(100%, 100%, 100%, 0);
   }
 table.byte {
   width: 40em;
