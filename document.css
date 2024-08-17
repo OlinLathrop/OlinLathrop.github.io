@@ -14,6 +14,7 @@ h2c, h3c, h4c, h5c, h6c {
   margin-left: 0;
   margin-right: 0;
   font-weight: bold;
+  page-break-after: avoid;
   }
 h2, h3, h4, h5, h6,
 h2i, h3i, h4i, h5i, h6i {
@@ -64,6 +65,12 @@ p {
 p.page {
   margin-top: 0.5em;
   text-align: center;
+  }
+p.nobreak {
+  page-break-inside: avoid;
+  }
+p.withprev {
+  page-break-before: avoid;
   }
 
 img.letthead {
@@ -141,11 +148,14 @@ table.fixed-wide {
   width: 100%;
   table-layout: fixed;
   }
+table.fixed60 {
+  width: 60%;
+  table-layout: fixed;
+  margin-left: auto;
+  margin-right: auto;
+  }
 table.full-width {
   width: 100%;
-  }
-td.right {
-  text-align: right;
   }
 th.left {
   text-align: left;
@@ -155,6 +165,9 @@ th.right {
   }
 td.left {
   text-align: left;
+  }
+td.right {
+  text-align: right;
   }
 td.unused {
   background: rgb(85%, 85%, 85%);
