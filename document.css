@@ -154,6 +154,18 @@ table.fixed60 {
   margin-left: auto;
   margin-right: auto;
   }
+table.fixed80 {
+  width: 80%;
+  table-layout: fixed;
+  margin-left: auto;
+  margin-right: auto;
+  }
+table.fixed95 {
+  width: 95%;
+  table-layout: fixed;
+  margin-left: auto;
+  margin-right: auto;
+  }
 table.full-width {
   width: 100%;
   }
@@ -171,4 +183,11 @@ td.right {
   }
 td.unused {
   background: rgb(85%, 85%, 85%);
+  }
+
+math {
+  math-style: normal;
+  }
+math.inline {
+  math-style: compact;
   }
